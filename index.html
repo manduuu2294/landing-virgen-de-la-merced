@@ -1,0 +1,1537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CELEBRACIÓN LA VIRGEN DE LA MERCED Y EL NIÑO DE CHIHUA 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=EFCO+Brookshire&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #A67C00;
+      --gold: #c2a64c;
+      --gold-light: #f5d88e;
+      --bg: #fffdf8;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      scroll-behavior: smooth;
+      background-color: var(--bg);
+      font-family: 'Poppins', sans-serif;
+      color: var(--text);
+    }
+
+    header {
+      background-image: url('Banner2.png');
+      background-size: cover;
+      background-position: top center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 2rem 1rem 0 1rem;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .portada-titulo {
+      margin-top: 0;
+      margin-top: -2rem;
+      padding: 0.5rem;
+      max-width: 90%;
+    }
+
+    .portada-titulo h1 {
+      font-family: 'EFCO Brookshire', serif;
+      font-size: 2.4rem;
+      margin-bottom: 0.2rem;
+      text-shadow: 0 4px 18px rgba(0,0,0,0.85), 0 1px 0 #fff;
+      background: rgba(0,0,0,0.32);
+      padding: 0.4em 0.8em;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    .portada-titulo p {
+      font-size: 0.75rem;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8), 0 1px 0 #000;
+      color: var(--gold);
+      background: rgba(0,0,0,0.25);
+      padding: 0.2em 0.4em;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    .portada-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 5%;
+    }
+
+    .portada-nav a {
+      width: 80%;
+    }
+
+    .portada-nav button {
+      background: linear-gradient(90deg, rgba(194, 166, 76, 0.85), rgba(245, 216, 142, 0.85));
+      color: #4d3200;
+      padding: 1.1rem;
+      border: none;
+      border-radius: 18px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      width: 100%;
+      transition: all 0.3s cubic-bezier(.4,1.5,.5,1), box-shadow 0.3s;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: fade-in-up 0.8s forwards;
+    }
+
+    .portada-nav button:nth-child(1) { animation-delay: 0.2s; }
+    .portada-nav button:nth-child(2) { animation-delay: 0.4s; }
+    .portada-nav button:nth-child(3) { animation-delay: 0.6s; }
+    .portada-nav button:nth-child(4) { animation-delay: 0.8s; }
+    .portada-nav button:nth-child(5) { animation-delay: 1s; }
+    .portada-nav button:nth-child(6) { animation-delay: 1.2s; }
+
+    .portada-nav button:hover {
+      background: linear-gradient(90deg, rgba(245, 216, 142, 0.95), rgba(194, 166, 76, 0.95));
+      transform: scale(1.08) translateY(-2px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+      color: #000;
+      filter: brightness(1.08);
+    }
+
+    @keyframes fade-in-up {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 720px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      height: 350px;
+      background: transparent;
+    }
+
+    .slides {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      animation: autoSlide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      flex: 0 0 100%;
+      object-fit: cover;
+      object-position: center;
+      background: transparent;
+      height: 100%;
+    }
+
+    @keyframes autoSlide {
+      0%, 30% { transform: translateX(0); }
+      33%, 63% { transform: translateX(-100%); }
+      66%, 96% { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+    .slider-dots {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .dot.active {
+      background: white;
+    }
+
+    .donar {
+      text-align: center;
+    }
+
+    .apoyo-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .apoyo-intro {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 15px;
+      border-left: 5px solid var(--gold);
+    }
+
+    .apoyo-intro p {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.7;
+      margin: 0;
+      font-style: italic;
+    }
+
+    .apoyo-opciones {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .apoyo-slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 20px;
+      margin-bottom: 2rem;
+      height: 400px;
+    }
+
+    .apoyo-slides {
+      display: flex;
+      width: 300%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .apoyo-slides .apoyo-card {
+      width: 33.333%;
+      flex-shrink: 0;
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+
+    .apoyo-slides .apoyo-card:first-child {
+      border-radius: 20px 0 0 20px;
+    }
+
+    .apoyo-slides .apoyo-card:last-child {
+      border-radius: 0 20px 20px 0;
+    }
+
+    .apoyo-controls {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+      z-index: 10;
+    }
+
+    .apoyo-btn-nav {
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .apoyo-btn-nav:hover {
+      background: #7a5900;
+      transform: scale(1.1);
+    }
+
+    .apoyo-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+
+    .apoyo-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .apoyo-dot.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      transform: scale(1.2);
+    }
+
+    .apoyo-dot:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    .apoyo-card {
+      background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      border: 2px solid transparent;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .apoyo-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold), var(--primary));
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .apoyo-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(194, 166, 76, 0.2);
+      border-color: var(--gold);
+    }
+
+    .apoyo-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .apoyo-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .apoyo-card h3 {
+      color: var(--primary);
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .apoyo-card p {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+
+    .apoyo-btn {
+      display: inline-block;
+      background: linear-gradient(45deg, #25D366, #128C7E);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .apoyo-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+      color: white;
+      text-decoration: none;
+    }
+
+    .cuenta-info, .yape-info {
+      background: rgba(194, 166, 76, 0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .cuenta-item {
+      margin-bottom: 0.8rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .cuenta-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .cuenta-item strong {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .yape-numero {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    .yape-nombre {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+    }
+
+    .apoyo-footer {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, rgba(194, 166, 76, 0.1) 0%, rgba(194, 166, 76, 0.05) 100%);
+      border-radius: 15px;
+      border: 2px solid var(--gold-light);
+    }
+
+    .apoyo-footer p {
+      font-size: 1.1rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .mayordomo-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 280px;
+    }
+
+    .mayordomo-card img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .mayordomo-card p {
+      font-weight: bold;
+      margin: 0.8rem 0 0.3rem;
+      font-size: 1.1rem;
+      color: #8B4513;
+    }
+
+    .mayordomo-card small {
+      display: block;
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      color: #666;
+      font-weight: 500;
+    }
+
+    .programa-dia {
+      margin-bottom: 1.2rem;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 12px;
+      border-left: 4px solid var(--primary);
+      box-shadow: 0 2px 8px rgba(166, 124, 0, 0.12);
+    }
+
+    .programa-dia h3 {
+      color: #d4af37;
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .programa-dia h4 {
+      color: var(--primary);
+      font-size: 1rem;
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    .programa-dia p {
+      margin: 0;
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.5;
+      font-weight: 500;
+    }
+
+    .donantes-lista {
+      margin-top: 1rem;
+      line-height: 1.8;
+      font-size: 0.95rem;
+    }
+
+    .donantes-header {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--primary);
+    }
+
+    .donantes-intro {
+      font-size: 1.1rem;
+      color: #555;
+      font-style: italic;
+      line-height: 1.6;
+      margin: 0;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid var(--gold);
+    }
+
+    .donantes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .donante-item {
+      background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      border: 1px solid var(--primary);
+      text-align: center;
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(166,124,0,0.08);
+    }
+
+    .donante-nombre {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .donante-contribucion {
+      font-size: 0.85rem;
+      color: #666;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    .donante-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(166,124,0,0.18);
+      border-color: var(--primary);
+      background: linear-gradient(135deg, #fff 0%, #f5f5f0 100%);
+    }
+
+    .donantes-footer {
+      text-align: center;
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 2px solid var(--primary);
+    }
+
+    .donantes-footer p {
+      font-size: 1rem;
+      color: var(--primary);
+      font-style: italic;
+      margin: 0;
+      background: rgba(166, 124, 0, 0.08);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      background-color: #f1f1f1;
+    }
+
+    .mayordomos-slider {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      height: 900px;
+      background: transparent;
+    }
+
+    .mayordomos-slides {
+      display: flex;
+      width: 200%;
+      height: 100%;
+      transition: transform 0.5s ease-in-out;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mayordomo-card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 50%;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mayordomo-card img {
+      width: 100%;
+      height: 800px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .mayordomo-card p {
+      font-weight: bold;
+      margin: 2.5rem 0 2rem;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .mayordomo-card small {
+      display: block;
+      margin-bottom: 6rem;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .mayordomos-controls {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1rem;
+      z-index: 10;
+    }
+
+    .mayordomos-btn {
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: background 0.3s;
+    }
+
+    .mayordomos-btn:hover {
+      background: #7a5900;
+    }
+
+    .mayordomos-dots {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 10;
+    }
+
+    .mayordomo-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.5);
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .mayordomo-dot.active {
+      background: white;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        height: 100vh;
+        padding-top: 1rem;
+        position: relative;
+      }
+      .portada-titulo {
+        margin-top: -1rem;
+      }
+      .portada-titulo h1 {
+        font-size: 1.4rem;
+        text-shadow: 0 3px 12px rgba(0,0,0,0.9), 0 1px 0 #fff;
+        padding: 0.5em 0.6em;
+        background: rgba(0,0,0,0.4);
+      }
+      .portada-titulo p {
+        font-size: 0.75rem;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.9), 0 1px 0 #000;
+        color: var(--primary);
+        background: rgba(0,0,0,0.2);
+        padding: 0.10em 0.3em;
+        border-radius: 6px;
+        margin-top: 0.2rem;
+      }
+      .portada-nav {
+        gap: 0.5rem;
+      }
+      .portada-nav button {
+        font-size: 0.9rem;
+        padding: 0.7rem;
+      }
+      section {
+        padding: 1.5rem 0.5rem;
+      }
+      h2 {
+        font-size: 1.6rem;
+        color: #d4af37;
+        margin-bottom: 1.5rem;
+      }
+      .card {
+        padding: 1rem;
+      }
+      .slider {
+        height: 240px;
+        background: transparent;
+      }
+      .mayordomos-slider {
+        height: 750px;
+        margin-bottom: 0.5rem;
+      }
+      .mayordomos-slides {
+        width: 200%;
+      }
+      .mayordomo-card {
+        width: 50%;
+      }
+      .mayordomo-card img {
+        height: 650px;
+      }
+      .mayordomo-card p {
+        font-size: 1rem;
+        margin: 2rem 0 1.5rem;
+        color: var(--primary);
+      }
+      .mayordomo-card small {
+        font-size: 1rem;
+        margin-bottom: 5rem;
+        font-weight: 500;
+        color: #333;
+      }
+      .mayordomos-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        background: var(--primary);
+        color: white;
+      }
+      .mayordomos-dots {
+        bottom: 20px;
+      }
+      .programa-dia {
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+      .programa-dia h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.4rem;
+      }
+      .programa-dia h4 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+      }
+      .programa-dia p {
+        font-size: 0.9rem;
+      }
+      .donantes-intro {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+      .donantes-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        margin: 1.5rem 0;
+      }
+      .donante-item {
+        padding: 0.8rem 1rem;
+        font-size: 0.95rem;
+      }
+
+      .donante-nombre {
+        font-size: 0.95rem;
+      }
+
+      .donante-contribucion {
+        font-size: 0.8rem;
+      }
+      .donantes-footer p {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+      }
+      .apoyo-intro {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .apoyo-intro p {
+        font-size: 1rem;
+      }
+      .apoyo-opciones {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .apoyo-slider {
+        height: 350px;
+      }
+      .apoyo-btn-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+        background: var(--primary);
+        color: white;
+      }
+      .apoyo-dots {
+        bottom: 15px;
+      }
+      .apoyo-dot {
+        width: 10px;
+        height: 10px;
+      }
+      .apoyo-dot.active {
+        background: var(--primary);
+        border-color: var(--primary);
+      }
+      .apoyo-dot:hover {
+        background: var(--primary);
+        border-color: var(--primary);
+      }
+      .apoyo-card {
+        padding: 1.5rem;
+      }
+      .apoyo-icon {
+        font-size: 2.5rem;
+      }
+      .apoyo-card h3 {
+        font-size: 1.2rem;
+      }
+      .apoyo-card p {
+        font-size: 0.9rem;
+      }
+      .apoyo-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+      }
+      .cuenta-info, .yape-info {
+        padding: 1rem;
+      }
+      .cuenta-item {
+        font-size: 0.9rem;
+      }
+      .yape-numero {
+        font-size: 1.1rem;
+      }
+      .apoyo-footer {
+        padding: 1.5rem;
+      }
+      .apoyo-footer p {
+        font-size: 1rem;
+      }
+    }
+    .galeria-carrusel {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 14px;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      background: #f8f9fa;
+      margin-bottom: 1.5rem;
+    }
+
+    .galeria-slides {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .galeria-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+      border-radius: 14px;
+      background: #e9ecef;
+      box-shadow: 0 2px 12px rgba(166,124,0,0.08);
+      opacity: 0;
+      transition: opacity 0.5s;
+      z-index: 1;
+      pointer-events: none;
+    }
+    .galeria-img.active {
+      opacity: 1;
+      z-index: 2;
+      pointer-events: auto;
+    }
+
+    .galeria-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 10;
+      opacity: 0.85;
+      transition: background 0.3s, opacity 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .galeria-btn:hover {
+      background: #7a5900;
+      opacity: 1;
+    }
+    .galeria-btn-prev { left: 10px; }
+    .galeria-btn-next { right: 10px; }
+
+    .galeria-dots {
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 10;
+    }
+    .galeria-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(166,124,0,0.18);
+      border: 2px solid var(--primary);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .galeria-dot.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      transform: scale(1.2);
+    }
+    .galeria-dot:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .galeria-video {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 15px;
+      border-left: 5px solid var(--gold);
+      text-align: center;
+    }
+
+    .galeria-video-frame {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      margin-bottom: 1rem;
+    }
+
+    .galeria-video-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+
+    .galeria-video-desc {
+      font-size: 1.1rem;
+      color: #555;
+      line-height: 1.7;
+      margin: 0;
+      font-style: italic;
+    }
+
+    .galeria-subtitulo {
+      text-align: center;
+      font-family: 'EFCO Brookshire', serif;
+      font-size: 0.85rem;
+      color: var(--primary);
+      margin: 0.5rem 0 0.2rem 0;
+      letter-spacing: 0.1px;
+      font-weight: 500;
+      text-shadow: 0 2px 8px rgba(166,124,0,0.08);
+    }
+
+    .galeria-desc {
+      text-align: center;
+      font-size: 1.05rem;
+      color: #555;
+      margin: 1.2rem 0 0.2rem 0;
+      font-style: italic;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .galeria-carrusel {
+        padding-bottom: 62%;
+      }
+      .galeria-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 1.1rem;
+      }
+      .galeria-dot {
+        width: 10px;
+        height: 10px;
+      }
+      .galeria-video-frame {
+        padding-bottom: 62%;
+      }
+    }
+    @media (min-width: 900px) {
+      header {
+        background-image: url('banner-web.png') !important;
+        height: 100vh;
+        min-height: 600px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-position: center center;
+        background-size: cover;
+      }
+      .portada-titulo {
+        margin-top: -2.5rem;
+        width: 70%;
+        max-width: 900px;
+        margin-bottom: 1.2rem;
+        padding: 1rem 2rem 1rem 2rem;
+        background: rgba(0,0,0,0.18);
+        border-radius: 14px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .portada-titulo h1 {
+        font-size: 2.1rem;
+        padding: 0.3em 0.7em;
+        margin-bottom: 0.3rem;
+        line-height: 1.1;
+        letter-spacing: 0.5px;
+        border-radius: 10px;
+        text-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 1px 0 #fff;
+      }
+      .portada-titulo p {
+        font-size: 0.95rem;
+        margin-top: 0.3rem;
+        padding: 0.15em 0.5em;
+        border-radius: 7px;
+        background: rgba(0,0,0,0.13);
+        color: var(--gold);
+        text-shadow: none;
+        font-weight: 600;
+      }
+      .portada-nav {
+        position: static;
+        margin-top: 1.2rem;
+        gap: 1rem;
+        width: 100%;
+        max-width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        background: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .portada-nav a {
+        width: 40% !important;
+        min-width: 220px !important;
+        max-width: 400px !important;
+        margin: 0.5rem auto 0 auto;
+        display: flex;
+        justify-content: center;
+        flex: none !important;
+        text-decoration: none !important;
+      }
+      .portada-nav button {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        font-size: 1rem;
+        padding: 0.7rem 0.2rem;
+        border-radius: 9px;
+        opacity: 0.97;
+        white-space: normal;
+        outline: none;
+        text-decoration: none !important;
+      }
+      section {
+        width: 70%;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .card {
+        width: 100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="portada-titulo">
+      <h1>CELEBRACIÓN LA VIRGEN DE LA MERCED Y EL NIÑO DE CHIHUA</h1>
+      <p>Chihua, Huanta, Ayacucho – 2025 23 de Set. al 26 de Set.</p>
+    </div>
+    <div class="portada-nav">
+      <a href="#historia"><button>Historia de la Festividad</button></a>
+      <a href="#galeria"><button>Galería de Recuerdos</button></a>
+      <a href="#mayordomos"><button>Mayordomos de la Fiesta</button></a>
+      <a href="#programa"><button>Programa de Celebración</button></a>
+      <a href="#donantes"><button>Agradecimientos a Donantes</button></a>
+      <a href="#donar"><button>Súmate al Apoyo</button></a>
+    </div>
+  </header>
+
+  <section id="historia">
+    <h2>Historia de la Festividad</h2>
+    <div class="slider">
+      <div class="slides">
+        <img src="historia1.svg" alt="Historia 1">
+        <img src="historia2.svg" alt="Historia 2">
+        <img src="historia3.svg" alt="Historia 3">
+      </div>
+      <div class="slider-dots">
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <div class="card">
+      <p style="text-align: justify;">La Fiesta de Chihua: donde la fe y la memoria nos reúnen</p>
+      <p style="text-align: justify;">Cada septiembre, en Chihua —distrito de Iguain, provincia de Huanta, en el corazón de Ayacucho— las flores, las promesas y los abrazos que esperan todo un año vuelven a llenar sus calles.<br>El pueblo entero se une para rendir homenaje a la Virgen de las Mercedes y al Niño de Chihua.</p>
+      <p style="text-align: justify;">Pero más que una tradición, es un reencuentro con lo que somos.</p>
+      <p style="text-align: justify;">Porque en Chihua, la devoción no se cuenta… se vive.</p>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galería de Recuerdos</h2>
+    <div class="card">
+      <div class="galeria-carrusel">
+        <div class="galeria-slides">
+          <img src="galeria1.png" alt="Fiesta anterior 1" class="galeria-img active">
+          <img src="galeria2.png" alt="Fiesta anterior 2" class="galeria-img">
+          <img src="galeria3.png" alt="Fiesta anterior 3" class="galeria-img">
+          <img src="galeria4.png" alt="Fiesta anterior 2" class="galeria-img">
+          <img src="galeria5.png" alt="Fiesta anterior 3" class="galeria-img">
+          <img src="galeria6.png" alt="Fiesta anterior 2" class="galeria-img">
+          <img src="galeria1.png" alt="Fiesta anterior 3" class="galeria-img">
+        </div>
+        <button class="galeria-btn galeria-btn-prev" onclick="changeGaleria(-1)">‹</button>
+        <button class="galeria-btn galeria-btn-next" onclick="changeGaleria(1)">›</button>
+        <div class="galeria-dots">
+          <span class="galeria-dot active" onclick="currentGaleria(1)"></span>
+          <span class="galeria-dot" onclick="currentGaleria(2)"></span>
+          <span class="galeria-dot" onclick="currentGaleria(3)"></span>
+        </div>
+      </div>
+      <div class="galeria-subtitulo">Virgen de la Merced y el Niño de Chihua 2024</div>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:10px;margin-top:24px;">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+      </div>
+      <p class="galeria-desc">Disfruta y revive los momentos más emotivos de la fiesta patronal a través de nuestras imágenes y videos.</p>
+    </div>
+  </section>
+
+  <section id="mayordomos">
+    <h2>Mayordomos de la Fiesta</h2>
+    <div class="mayordomos-slider">
+      <div class="mayordomos-slides">
+        <div class="mayordomo-card">
+          <img src="mayordomo1.svg" alt="Mayordomos Virgen de la Merced">
+          <p>Mayordomos de la Virgen de la Merced</p>
+          <small>Manuel Mandujano Orna<br>Miloslabria Gutierrez Torres</small>
+        </div>
+        <div class="mayordomo-card">
+          <img src="mayordomo1.svg" alt="Mayordomos del Niño">
+          <p>Mayordomos del Niño</p>
+          <small>Manuel Mandujano Gutierrez<br>Lizbeth Sulca Salas</small>
+        </div>
+      </div>
+      <div class="mayordomos-controls">
+        <button class="mayordomos-btn" onclick="changeMayordomo(-1)">‹</button>
+        <button class="mayordomos-btn" onclick="changeMayordomo(1)">›</button>
+      </div>
+      <div class="mayordomos-dots">
+        <span class="mayordomo-dot active" onclick="currentMayordomo(1)"></span>
+        <span class="mayordomo-dot" onclick="currentMayordomo(2)"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="programa">
+    <h2>Programa de Celebración</h2>
+    <div class="card">
+      <div class="programa-dia">
+        <h3>23 Septiembre</h3>
+        <h4>Víspera de las celebraciones</h4>
+        <p>Celebración.</p>
+      </div>
+      <div class="programa-dia">
+        <h3>24 Septiembre</h3>
+        <h4>Día central de la Virgen de La Merced</h4>
+        <p>Misa, Feria de artesanos, Almuerzo, Celebración.</p>
+      </div>
+      <div class="programa-dia">
+        <h3>25 Septiembre</h3>
+        <h4>Día central del Niño y de San Marcos</h4>
+        <p>Misa, Almuerzo, Feria de viandas, Compartir para los niños, Celebración.</p>
+      </div>
+      <div class="programa-dia">
+        <h3>26 Septiembre</h3>
+        <h4>Convido</h4>
+        <p>Celebración.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="donantes">
+    <h2>Agradecimientos a Donantes</h2>
+    <div class="card">
+      <div class="donantes-header">
+        <p class="donantes-intro">A quienes agradecemos infinitamente por su generosa contribución a esta tradición centenaria.</p>
+      </div>
+      <div class="donantes-grid">
+        <div class="donante-item">
+          <div class="donante-nombre">Jean Pierre Mandujano</div>
+          <div class="donante-contribucion">Orquesta <span style='font-weight:400;'>(valorizada en 10,000 soles)</span></div>
+        </div>
+        <div class="donante-item">
+          <div class="donante-nombre">Gianfranco Mandujano</div>
+          <div class="donante-contribucion">Donación de 4,000 soles</div>
+        </div>
+        <div class="donante-item">
+          <div class="donante-nombre">Roberto Sulca, Domenica Hurtado y Katty Sulca</div>
+          <div class="donante-contribucion">Aporte conjunto: Vestimenta de la Virgen, arreglo del anda de la Virgen y el Niño</div>
+        </div>
+        <div class="donante-item">
+          <div class="donante-nombre">Sebastián Salcedo</div>
+          <div class="donante-contribucion">Donación de 500 soles</div>
+        </div>
+        <div class="donante-item">
+          <div class="donante-nombre">Franco Corahua</div>
+          <div class="donante-contribucion">Aporte en especie: 2 lechones</div>
+        </div>
+        <div class="donante-item">
+          <div class="donante-nombre">Delfina Salas</div>
+          <div class="donante-contribucion">Aporte comprometido (detalle pendiente)</div>
+        </div>
+        <div class="donante-item">
+          <div class="donante-nombre">Yanina Gutiérrez</div>
+          <div class="donante-contribucion">Aporte comprometido (detalle pendiente)</div>
+        </div>
+        <div class="donante-item">
+          <div class="donante-nombre">Rosa Pareja</div>
+          <div class="donante-contribucion">Aporte comprometido (detalle pendiente)</div>
+        </div>
+      </div>
+      <div class="donantes-footer">
+        <p>Su apoyo hace posible que esta celebración siga viva en el corazón de Chihua.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="donar" class="donar">
+    <h2>Súmate al Apoyo</h2>
+    <div class="apoyo-container">
+      <div class="apoyo-intro">
+        <p>Tu contribución hace posible que esta tradición centenaria siga viva. Cada donación, por pequeña que sea, es un paso más para mantener viva la fe y la cultura de Chihua.</p>
+      </div>
+      
+      <div class="apoyo-opciones">
+        <div class="apoyo-slider">
+          <div class="apoyo-slides">
+            <div class="apoyo-card">
+              <div class="apoyo-icon">📱</div>
+              <h3>WhatsApp</h3>
+              <p>Contáctanos directamente</p>
+              <a href="https://wa.me/51971678079?text=Hola,%20quiero%20apoyar%20la%20Fiesta%20Patronal%20de%20Chihua" class="apoyo-btn whatsapp-btn" target="_blank">
+                <span>💬 Chatear</span>
+              </a>
+              <!-- Actualizar el número en el href arriba -->
+              <a href="https://wa.me/51971678079?text=Hola,%20quiero%20apoyar%20la%20Fiesta%20Patronal%20de%20Chihua" class="apoyo-btn whatsapp-btn" target="_blank" style="display:none;"></a>
+            </div>
+            
+            <div class="apoyo-card">
+              <div class="apoyo-icon">🏦</div>
+              <h3>Cuenta Bancaria</h3>
+              <p>Transferencia directa</p>
+              <div class="cuenta-info">
+                <div class="cuenta-item">
+                  <strong>Banco:</strong> BCP
+                </div>
+                <div class="cuenta-item">
+                  <strong>Cuenta BCP Soles:</strong> 19497722526020
+                </div>
+                <div class="cuenta-item">
+                  <strong>CCI:</strong> 00219419772252602095
+                </div>
+                <div class="cuenta-item">
+                  <strong>Titular:</strong> Miloslabria Y. Gutierrez T.
+                </div>
+              </div>
+            </div>
+            
+            <div class="apoyo-card">
+              <div class="apoyo-icon">💳</div>
+              <h3>Yape</h3>
+              <p>Pago rápido y seguro</p>
+              <div class="yape-info">
+                <div class="yape-numero">965339741</div>
+                <div class="yape-nombre">Miloslabria Y. Gutierrez T.</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="apoyo-controls">
+            <button class="apoyo-btn-nav" onclick="changeApoyo(-1)">‹</button>
+            <button class="apoyo-btn-nav" onclick="changeApoyo(1)">›</button>
+          </div>
+          
+          <div class="apoyo-dots">
+            <span class="apoyo-dot active" onclick="currentApoyo(1)"></span>
+            <span class="apoyo-dot" onclick="currentApoyo(2)"></span>
+            <span class="apoyo-dot" onclick="currentApoyo(3)"></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="apoyo-footer">
+        <p>¡Gracias por mantener viva esta tradición! 🙏</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© CELEBRACIÓN LA VIRGEN DE LA MERCED Y EL NIÑO DE CHIHUA – 2025</p>
+  </footer>
+
+  <script>
+    // Auto-update dots based on animation
+    const dots = document.querySelectorAll('.dot');
+    let currentDot = 0;
+
+    setInterval(() => {
+      dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentDot);
+      });
+      currentDot = (currentDot + 1) % 3;
+    }, 3000); // Change dot every 3 seconds
+
+    // Mayordomos slider
+    let currentMayordomoIndex = 0;
+    const mayordomosSlides = document.querySelector('.mayordomos-slides');
+    const mayordomoDots = document.querySelectorAll('.mayordomo-dot');
+    const totalMayordomos = 2;
+
+    function changeMayordomo(direction) {
+      currentMayordomoIndex += direction;
+      if (currentMayordomoIndex >= totalMayordomos) currentMayordomoIndex = 0;
+      if (currentMayordomoIndex < 0) currentMayordomoIndex = totalMayordomos - 1;
+      updateMayordomosSlider();
+    }
+
+    function currentMayordomo(index) {
+      currentMayordomoIndex = index - 1;
+      updateMayordomosSlider();
+    }
+
+    function updateMayordomosSlider() {
+      const translateX = -currentMayordomoIndex * 50;
+      mayordomosSlides.style.transform = `translateX(${translateX}%)`;
+      
+      // Update dots
+      mayordomoDots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentMayordomoIndex);
+      });
+    }
+
+    // Initialize mayordomos slider
+    updateMayordomosSlider();
+
+    // Apoyo slider
+    let currentApoyoIndex = 0;
+    const apoyoSlides = document.querySelector('.apoyo-slides');
+    const apoyoDots = document.querySelectorAll('.apoyo-dot');
+    const totalApoyo = 3;
+
+    function changeApoyo(direction) {
+      currentApoyoIndex += direction;
+      if (currentApoyoIndex >= totalApoyo) currentApoyoIndex = 0;
+      if (currentApoyoIndex < 0) currentApoyoIndex = totalApoyo - 1;
+      updateApoyoSlider();
+    }
+
+    function currentApoyo(index) {
+      currentApoyoIndex = index - 1;
+      updateApoyoSlider();
+    }
+
+    function updateApoyoSlider() {
+      const translateX = -currentApoyoIndex * 33.333;
+      apoyoSlides.style.transform = `translateX(${translateX}%)`;
+      
+      // Update dots
+      apoyoDots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentApoyoIndex);
+      });
+    }
+
+    // Auto-slide for apoyo
+    setInterval(() => {
+      changeApoyo(1);
+    }, 5000); // Change every 5 seconds
+
+    // Initialize apoyo slider
+    updateApoyoSlider();
+
+    // Galería carrusel
+    let currentGaleriaIndex = 0;
+    const galeriaSlides = document.querySelector('.galeria-slides');
+    const galeriaDots = document.querySelectorAll('.galeria-dot');
+    const totalGaleria = document.querySelectorAll('.galeria-img').length;
+
+    function changeGaleria(direction) {
+      currentGaleriaIndex += direction;
+      if (currentGaleriaIndex >= totalGaleria) currentGaleriaIndex = 0;
+      if (currentGaleriaIndex < 0) currentGaleriaIndex = totalGaleria - 1;
+      updateGaleriaSlider();
+    }
+
+    function currentGaleria(index) {
+      currentGaleriaIndex = index - 1;
+      updateGaleriaSlider();
+    }
+
+    function updateGaleriaSlider() {
+      const galeriaImgs = document.querySelectorAll('.galeria-img');
+      galeriaImgs.forEach((img, idx) => {
+        img.classList.toggle('active', idx === currentGaleriaIndex);
+      });
+      galeriaDots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentGaleriaIndex);
+      });
+    }
+
+    // Auto-slide for galeria
+    setInterval(() => {
+      changeGaleria(1);
+    }, 5000);
+
+    // Initialize galeria slider
+    updateGaleriaSlider();
+  </script>
+</body>
+</html>
