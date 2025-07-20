@@ -1086,82 +1086,49 @@
     @media (min-width: 900px) {
       header {
         background-image: url('banner-web.png') !important;
+        background-size: cover;
+        background-position: center center;
         height: 100vh;
         min-height: 600px;
-        padding: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        background-position: center center;
-        background-size: cover;
+        padding-top: 0.5rem;
       }
       .portada-titulo {
-        margin-top: -2.5rem;
-        width: 70%;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 100%;
         max-width: 900px;
-        margin-bottom: 1.2rem;
-        padding: 1rem 2rem 1rem 2rem;
         background: rgba(0,0,0,0.18);
         border-radius: 14px;
         box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-        margin-left: auto;
-        margin-right: auto;
       }
-      .portada-titulo h1 {
-        font-size: 2.1rem;
-        padding: 0.3em 0.7em;
-        margin-bottom: 0.3rem;
-        line-height: 1.1;
-        letter-spacing: 0.5px;
-        border-radius: 10px;
-        text-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 1px 0 #fff;
-      }
-      .portada-titulo p {
-        font-size: 0.95rem;
-        margin-top: 0.3rem;
-        padding: 0.15em 0.5em;
-        border-radius: 7px;
-        background: rgba(0,0,0,0.13);
-        color: var(--gold);
-        text-shadow: none;
-        font-weight: 600;
+      .portada-nav-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: -1.5rem;
       }
       .portada-nav {
-        position: static;
-        margin-top: 1.2rem;
-        gap: 1rem;
-        width: 100%;
-        max-width: 900px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-end;
+        display: grid;
+        grid-template-columns: 360px 360px;
+        gap: 1.2rem 2.5rem;
         background: none;
-        margin-left: auto;
-        margin-right: auto;
       }
       .portada-nav a {
-        width: 40% !important;
-        min-width: 220px !important;
-        max-width: 400px !important;
-        margin: 0.5rem auto 0 auto;
-        display: flex;
-        justify-content: center;
-        flex: none !important;
+        width: 360px;
+        margin: 0;
         text-decoration: none !important;
+        display: block;
       }
       .portada-nav button {
-        width: 100% !important;
-        min-width: 0 !important;
-        max-width: 100% !important;
-        font-size: 1rem;
-        padding: 0.7rem 0.2rem;
-        border-radius: 9px;
-        opacity: 0.97;
-        white-space: normal;
-        outline: none;
-        text-decoration: none !important;
+        width: 100%;
+        box-sizing: border-box;
       }
       section {
         width: 70%;
@@ -1176,6 +1143,11 @@
         margin-right: auto;
       }
     }
+    @media (max-width: 899px) {
+      .portada-nav-wrapper {
+        margin-top: -2rem;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1184,13 +1156,15 @@
       <h1>CELEBRACIÓN LA VIRGEN DE LA MERCED Y EL NIÑO DE CHIHUA</h1>
       <p>Chihua, Huanta, Ayacucho – 2025 23 de Set. al 26 de Set.</p>
     </div>
-    <div class="portada-nav">
-      <a href="#historia"><button>Historia de la Festividad</button></a>
-      <a href="#galeria"><button>Galería de Recuerdos</button></a>
-      <a href="#mayordomos"><button>Mayordomos de la Fiesta</button></a>
-      <a href="#programa"><button>Programa de Celebración</button></a>
-      <a href="#donantes"><button>Agradecimientos a Donantes</button></a>
-      <a href="#donar"><button>Súmate al Apoyo</button></a>
+    <div class="portada-nav-wrapper">
+      <div class="portada-nav">
+        <a href="#historia"><button>Historia de la Festividad</button></a>
+        <a href="#galeria"><button>Galería de Recuerdos</button></a>
+        <a href="#mayordomos"><button>Mayordomos de la Fiesta</button></a>
+        <a href="#programa"><button>Programa de Celebración</button></a>
+        <a href="#donantes"><button>Agradecimientos a Donantes</button></a>
+        <a href="#donar"><button>Súmate al Apoyo</button></a>
+      </div>
     </div>
   </header>
 
@@ -1238,9 +1212,11 @@
         </div>
       </div>
       <div class="galeria-subtitulo">Virgen de la Merced y el Niño de Chihua 2024</div>
+      <!--
       <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:10px;margin-top:24px;">
         <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
       </div>
+      -->
       <p class="galeria-desc">Disfruta y revive los momentos más emotivos de la fiesta patronal a través de nuestras imágenes y videos.</p>
     </div>
   </section>
